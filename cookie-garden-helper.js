@@ -161,7 +161,9 @@
     }
 
     static handleDying(config, plant, x, y) {
-      if (config.autoHarvestCheckCpSMultDying &&
+      if (config.autoHarvestAllMature) {
+        this.harvest(x, y)
+      } else if (config.autoHarvestCheckCpSMultDying &&
         this.CpSMult >= config.autoHarvestMiniCpSMultDying.value) {
         this.harvest(x, y);
       } else if (config.autoHarvestDying &&
