@@ -141,8 +141,8 @@ class Garden {
     let [seedId, age] = config.savedPlot[y][x];
     seedId--;
     if (config.autoHarvestCleanGarden &&
-        ((plant.unlocked && seedId == -1) ||
-         (seedId > -1 && seedId != plant.id))
+        ((plant.unlocked && seedId == -1 && plant.plantable) ||
+         (seedId > -1 && seedId != plant.id && plant.plantable))
         ) {
       this.harvest(x, y);
     }
