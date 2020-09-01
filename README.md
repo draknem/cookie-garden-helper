@@ -9,7 +9,7 @@ To activate, click the bookmark when the game's open.
 
 ```javascript
 javascript: (function () {
-    Game.LoadMod('https://rawgit.com/yannprada/cookie-garden-helper/master/cookie-garden-helper.js');
+    Game.LoadMod('https://raw.githubusercontent.com/lstomberg/cookie-garden-helper/master/cookie-garden-helper.js');
 }());
 ```
 
@@ -38,6 +38,7 @@ the conditions when the plant will be harvested:
   not empty but the young plant don't match
 - mature:
   - if it is a new seed, and the option **New seeds** is **ON**
+  - if the option **All** is **ON**
   - if the option **Check CpS Mult** is **ON**, and the current CpS multiplier
   is above or equal to the one specified at **Mini CpS multiplier**
 - dying:
