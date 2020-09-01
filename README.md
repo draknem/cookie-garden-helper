@@ -9,7 +9,7 @@ To activate, click the bookmark when the game's open.
 
 ```javascript
 javascript: (function () {
-    Game.LoadMod('https://raw.githubusercontent.com/lstomberg/cookie-garden-helper/master/cookie-garden-helper.js');
+    Game.LoadMod('https://lstomberg.github.io/cookie-garden-helper/cookie-garden-helper.js');
 }());
 ```
 
