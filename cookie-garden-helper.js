@@ -31,7 +31,7 @@
         autoPlantCheckCpSMult: false,
         autoPlantMaxiCpSMult: { value: 0, min: 0 },
         savedPlot: [],
-		forceCycleUpdates: false,
+        forceCycleUpdates: false,
       };
     }
 
