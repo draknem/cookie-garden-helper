@@ -1,5 +1,8 @@
 # cookie-garden-helper
 
+Forked to optimize for learning new seeds faster
+Readme is uncorrected
+
 Automate your garden in Cookie Clicker
 
 ## How to use
@@ -9,7 +12,7 @@ To activate, click the bookmark when the game's open.
 
 ```javascript
 javascript: (function () {
-    Game.LoadMod('https://lstomberg.github.io/cookie-garden-helper/cookie-garden-helper.js');
+    Game.LoadMod('https://draknem.github.io/cookie-garden-helper/cookie-garden-helper.js');
 }());
 ```
 
