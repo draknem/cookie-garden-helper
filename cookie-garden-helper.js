@@ -1,4 +1,3 @@
-
 {
 
 
@@ -33,7 +32,6 @@
         autoPlantMaxiCpSMult: { value: 0, min: 0 },
         savedPlot: [],
         forceCycleUpdates: false,
-	forceCycleUpdatesT: { value: 300, min: 0.001 },
       };
     }
 
@@ -213,7 +211,7 @@
           }
         }
       });
-	  if (config.forceCycleUpdates) {Game.Objects['Farm'].minigame.stepT=config.forceCycleUpdatesT;}
+	  if (config.forceCycleUpdates) {Game.Objects['Farm'].minigame.stepT=0.01;}
     }
   }
 
@@ -519,13 +517,6 @@
         'forceCycleUpdates', 'Cheat timer',
         'Forces timer to x seconds', true,
         config.forceCycleUpdates
-      )}
-      </p>
-      <p>
-          ${this.numberInput(
-        'forceCycleUpdatesT', 'Timer T',
-        'Seconds for timer multiplier (default = 500)',
-        config.forceCycleUpdatesT
       )}
       </p>
     </div>
