@@ -214,7 +214,7 @@
       });
 	  if (config.forceCycleUpdates) {
 		  Game.Objects['Farm'].minigame.stepT=1;
-	          config.forceCycleUpdatesTurbo=false}
+		  if (config.forceCycleUpdatesTurbo) {Main.handleToggle('forceCycleUpdatesTurbo')}}
 	  if (config.forceCycleUpdatesTurbo) {Game.Objects['Farm'].minigame.stepT=0.01;}
     }
   }
@@ -527,7 +527,7 @@
           ${this.button(
         'forceCycleUpdatesTurbo', 'Cheat timer turbo',
         'Forces timer to 0.01 second', true,
-        config.forceCycleUpdates
+        config.forceCycleUpdatesTurbo
       )}
       </p>
     </div>
