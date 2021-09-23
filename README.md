@@ -38,7 +38,7 @@ the conditions when the plant will be harvested:
   - if the option **Clean garden** is **ON**, the corresponding saved slot is
   empty and the plant is already unlocked
   - if the option **Clean garden** is **ON**, the corresponding saved slot is
-  not empty but the young plant don't match
+  not empty but the young plant don't match and is unlocked
 - mature:
   - if it is a new seed, and the option **New seeds** is **ON**
   - if the option **All** is **ON**
@@ -66,12 +66,14 @@ below or equal to the one specified at **Maxi CpS multiplier**
 
 ### Manual tools
 
-This section is pretty obvious. Only one tool is there for now:
-
 - **Plant selected seed**:
   - select a seed you have unlocked
   - click this button to fill all the empty tiles of your plot
   - (don't forget to deselect the seed)
+
+- **Cheat timer**:
+  - Forces next update to happen within a second
+  - Coded in a first way I found so works in an inefficient, roundabout way.
 
 ## Sacrifice garden
 
@@ -85,7 +87,3 @@ This is to prevent planting locked seeds, as well as allowing you to verify your
 configuration before restarting automation.
 
 The rest of your configuration will remain.
-
-## Screenshot
-
-![Screenshot - UI of the mod cookie-garden-helper](/img/cookie-garden-helper.png?raw=true "UI")
