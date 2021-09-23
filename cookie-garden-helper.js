@@ -212,7 +212,7 @@
           }
         }
       });
-	  this.tick();
+	  this.stepT=1;
     }
   }
 
