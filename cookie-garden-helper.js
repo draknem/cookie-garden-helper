@@ -1,3 +1,4 @@
+
 {
 
 
@@ -236,7 +237,6 @@
   display: table;
   clear: both;
 }
-
 .cookieGardenHelperPanel {
   float: left;
   width: 25%;
@@ -249,16 +249,12 @@
   float: left;
   width: 50%;
 }
-
 #autoHarvestPanel { color: wheat; }
 #autoHarvestPanel a { color: wheat; }
-
 #autoPlantPanel { color: lightgreen; }
 #autoPlantPanel a { color: lightgreen; }
-
 #autoHarvestPanel a:hover,
 #autoPlantPanel a:hover { color: white; }
-
 #cookieGardenHelperTitle {
   color: grey;
   font-size: 2em;
@@ -282,7 +278,6 @@
 #cookieGardenHelper input[type=number] {
   width: 3em;
 }
-
 #cookieGardenHelper a.toggleBtn:not(.off) .toggleBtnOff,
 #cookieGardenHelper a.toggleBtn.off .toggleBtnOn {
   display: none;
@@ -291,7 +286,6 @@
 #cookieGardenHelper span.labelWithState.active .labelStateNotActive {
   display: none;
 }
-
 #cookieGardenHelperTooltip {
   width: 300px;
 }
@@ -307,7 +301,6 @@
 #cookieGardenHelperTooltip .gardenTileIcon {
   position: inherit;
 }
-
 #cookieGardenHelper .warning {
     padding: 1em;
     font-size: 1.5em;
@@ -648,7 +641,8 @@
       }
     }
   }
-
+setTimeout(function waitForGame() {
+if (typeof Game === 'object' && Game.ready) {
   if (Garden.isActive) {
     Main.init();
   } else {
@@ -656,6 +650,8 @@
     console.log(msg);
     UI.createWarning(msg);
   }
-
+}
+else setTimeout(waitForGame,100)
+})
 
 }
