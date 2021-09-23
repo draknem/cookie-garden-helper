@@ -32,6 +32,7 @@
         autoPlantMaxiCpSMult: { value: 0, min: 0 },
         savedPlot: [],
         forceCycleUpdates: false,
+	forceCycleUpdatesTurbo: false,
       };
     }
 
@@ -211,7 +212,10 @@
           }
         }
       });
-	  if (config.forceCycleUpdates) {Game.Objects['Farm'].minigame.stepT=0.01;}
+	  if (config.forceCycleUpdates) {
+		  Game.Objects['Farm'].minigame.stepT=1;
+	          config.forceCycleUpdatesTurbo=false}
+	  if (config.forceCycleUpdatesTurbo) {Game.Objects['Farm'].minigame.stepT=0.01;}
     }
   }
 
@@ -512,10 +516,17 @@
         ${this.button('fillGardenWithSelectedSeed', 'Plant selected seed',
             'Plant the selected seed on all empty tiles')}
       </p>
-	  <p>
+      <p>
           ${this.button(
         'forceCycleUpdates', 'Cheat timer',
-        'Forces timer to x seconds', true,
+        'Forces timer to 1 second', true,
+        config.forceCycleUpdates
+      )}
+      </p>
+      <p>
+          ${this.button(
+        'forceCycleUpdatesTurbo', 'Cheat timer turbo',
+        'Forces timer to 0.01 second', true,
         config.forceCycleUpdates
       )}
       </p>
