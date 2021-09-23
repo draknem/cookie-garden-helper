@@ -31,6 +31,7 @@
         autoPlantCheckCpSMult: false,
         autoPlantMaxiCpSMult: { value: 0, min: 0 },
         savedPlot: [],
+		forceCycleUpdates: false,
       };
     }
 
@@ -210,6 +211,7 @@
           }
         }
       });
+	  this.tick();
     }
   }
 
@@ -381,7 +383,7 @@
     }
 
     static get readmeLink() {
-      return 'https://github.com/yannprada/'
+      return 'https://github.com/draknem/'
         + 'cookie-garden-helper/blob/master/README.md#how-it-works';
     }
 
@@ -424,7 +426,7 @@
         <p>
           ${this.button(
         'autoHarvestCleanGarden', 'Clean Garden',
-        'Only allow saved and unlocked seeds', true,
+        'Only allow saved seeds', true,
         config.autoHarvestCleanGarden
       )}
         </p>
@@ -517,6 +519,10 @@
       <p>
         ${this.button('fillGardenWithSelectedSeed', 'Plant selected seed',
             'Plant the selected seed on all empty tiles')}
+      </p>
+      <p>
+        ${this.button('forceCycleUpdates', 'Cheat timer',
+            'Forces ')}
       </p>
     </div>
   </div>
