@@ -212,7 +212,7 @@
           }
         }
       });
-	  this.stepT=1;
+	  if (config.forceCycleUpdates) {Game.Objects['Farm'].minigame.stepT=1;}
     }
   }
 
@@ -513,9 +513,12 @@
         ${this.button('fillGardenWithSelectedSeed', 'Plant selected seed',
             'Plant the selected seed on all empty tiles')}
       </p>
-      <p>
-        ${this.button('forceCycleUpdates', 'Cheat timer',
-            'Forces ')}
+	  <p>
+          ${this.button(
+        'forceCycleUpdates', 'Cheat timer',
+        'Forces timer to 1 second', true,
+        config.forceCycleUpdates
+      )}
       </p>
     </div>
   </div>
@@ -576,7 +579,7 @@
 
   class Main {
     static init() {
-      this.timerInterval = 1000;
+      this.timerInterval = 500;
       this.config = Config.load();
       UI.build(this.config);
 
