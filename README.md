@@ -1,7 +1,6 @@
 # cookie-garden-helper
 
 Forked to optimize for learning new seeds faster
-Readme is uncorrected
 
 Automate your garden in Cookie Clicker
 
