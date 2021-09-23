@@ -646,6 +646,7 @@ if (typeof Game === 'object' && Game.ready) {
   if (Garden.isActive) {
     Main.init();
   }
+  else setTimeout(waitForGame,100)
 }
 else setTimeout(waitForGame,100)
 })
