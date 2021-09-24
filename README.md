@@ -25,11 +25,11 @@ Create a file named "info.txt" and paste the following it it:
 	"Name": "Cookie Garden Helper",
 	"ID": "cookieGardenHelper",
 	"Author": "yannprada, lstomberg, draknem",
-    "Description": "Automation and cheating tool for Garden minigame",
-    "Date": "24/09/2021",
+	"Description": "Automation and cheating tool for Garden minigame",
+	"Date": "24/09/2021",
 	"Dependencies": [],
 	"Disabled": 1,
-    "AllowSteamAchievs": 1
+	"AllowSteamAchievs": 1
 }
 ```
 
