@@ -1,8 +1,6 @@
 # cookie-garden-helper
 
-Forked to optimize for learning new seeds faster
-
-Automate your garden in Cookie Clicker
+Forked to optimize for learning new seeds faster and make the mod work on steam reliably
 
 ## How to use
 
@@ -13,6 +11,26 @@ To activate, click the bookmark when the game's open.
 javascript: (function () {
     Game.LoadMod('https://draknem.github.io/cookie-garden-helper/cookie-garden-helper.js');
 }());
+```
+To use it with Steam version:
+
+Create a folder named "cookieGardenHelper" in your mods/workshop/ or mods/local folder.
+
+Inside of it create a file named "main.js" and paste the javascript fragment above in it.
+
+Create a file named "info.txt" and paste the following it it:
+
+```json
+{
+	"Name": "Cookie Garden Helper",
+	"ID": "cookieGardenHelper",
+	"Author": "yannprada, lstomberg, draknem",
+    "Description": "Automation and cheating tool for Garden minigame",
+    "Date": "24/09/2021",
+	"Dependencies": [],
+	"Disabled": 1,
+    "AllowSteamAchievs": 1
+}
 ```
 
 ## How it works
