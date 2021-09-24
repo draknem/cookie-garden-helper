@@ -32,6 +32,8 @@ Create a file named "info.txt" and paste the following it it:
 	"AllowSteamAchievs": 1
 }
 ```
+Or simply download this repository and copy cookie-garden-helper folder to your mods/workshop/ or mods/local folder.
+
 
 ## How it works
 
